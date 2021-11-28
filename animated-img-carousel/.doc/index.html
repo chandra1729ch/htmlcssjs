@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated image carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#62</button>
+            <ul data-slide>
+                <li class="slide" data-active>
+                    <img src="img1.jpg" alt="Nature Image #1">
+                </li>
+                <li class="slide">
+                    <img src="img2.jpg" alt="Nature Image #2">
+                </li>
+                <li class="slide">
+                    <img src="img3.jpg" alt="Nature Image #3">
+                </li>
+                <li class="slide">
+                    <img src="img4.jpg" alt="Nature Image #4">
+                </li>
+                <li class="slide">
+                    <img src="img5.jpg" alt="Nature Image #4">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        const buttons=document.querySelectorAll("[data-carousel-button]");
+// const a=document.getElementById("button")
+// const slides=button.closest("[data-carousel]").querySelector("[data-slide]")
+// const activeSlide=document.querySelector("[data-active]");
+// console.log(a);
+console.log(buttons)
+buttons.forEach(button=>{
+    button.addEventListener("click",()=>{
+        const offset=button.dataset.carouselButoon==="next" ? 1 : -1;
+        console.log("1")
+        const slides=button.closest("[data-carousel]").querySelector("[data-slide]")
+        const activeSlide=slides.querySelector("[data-active]");
+        let newIndex=[...slides.children].indexOf(activeSlide)+offset;
+        if(newIndex<0)newIndex=slides.children.length-1;
+        if(newIndex>=slides.children.length)newIndex=0;
+
+        slides.children[newIndex].dataset.active=true;
+        delete activeSlide.dataset.active
+        
+    })
+})
+    </script>
+</body>
+</html>
