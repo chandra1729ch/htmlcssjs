@@ -1,0 +1,85 @@
+*{
+
+}
+
+body{
+    background: #eef8ff;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: #fff;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 100px 0 30px;
+}
+
+.row{
+width: 85%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10x;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+form{
+    padding-bottom:15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 50px;
+}
+form .far{
+    font-size: 18px;
+    margin-bottom: 10x;
+    
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #bbb;
+    border: 0;
+    outline: none;
+   
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    /* color: tomato; */
+}
+form button .fas{
+    font-size: 20px;
+    color: #bbb;
+}

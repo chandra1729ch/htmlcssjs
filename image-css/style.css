@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.potrait{
+top: 0;
+left: 0;
+width: 100%;
+height: 200vh;
+position: absolute;
+
+}
+.potrait img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.potrait img.texture{
+    mix-blend-mode: multiply;
+    filter: contrast(7);
+}
+.container{
+    display:flex
+}
+/* .gradient{
+    background-image: linear-gradient(to bottom,pink,green,url(chandra.jpg));
+} */

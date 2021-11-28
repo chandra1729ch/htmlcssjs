@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* div input{
+    
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to left top,rgb(69, 238, 229),rgb(170, 210, 226));
+} */
+
+.main {
+    float: none;
+    margin:auto;
+    text-align:center;
+
+}
+.main input{
+    border-radius: 20px;
+    border: none;
+    height:25px;
+    text-align:center;
+    margin: 5px;
+    background: linear-gradient(to left top,rgb(69, 238, 229),rgb(170, 210, 226));
+}
+button{
+    background: linear-gradient(to left top,rgb(123, 124, 184),rgb(20, 127, 170));
+    height: 25px; 
+    width: 75px;
+    border: none;
+    border-radius: 10px;
+}
+/* .emoji{
+width: 50%;
+height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 25%;
+background: linear-gradient(to right top, #ccc,orange);
+} */

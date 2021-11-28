@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+}
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 80%;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter:blur(2rem);
+    display:flex;
+}
+.circle1,.circle2{
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    /* z-index:2; */
+    /* background: magenta; */
+  border-radius: 50%;
+}
+.circle1{
+    top: 5%;
+    right: 10%;
+}
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+.user img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.dashboard{
+    flex:1;
+    display:flex ;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 20px;
+    padding: 10px;
+}
+.games{
+    flex:2;
+}
+.link{
+    display: flex;
+    margin: 20px 0;
+    padding:5px 10px;
+    align-items: center;
+}
+.link h3{
+    padding: 0px 20px;
+}
+.pro{
+    background: linear-gradient(to right bottom,rgba(38, 224, 215, 0.849),rgba(16, 117, 211, 0.2));
+    border-radius: 20px;
+    color:white;
+    padding: 5px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 6px 6px 20px rgb(122, 122, 122,0.4);
+}
+.pro h3{
+    padding: 5px 5px;
+    width: 60%;
+    opacity:0.8;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+p{
+    color: #658ec6;
+    font-weight: 400;
+    opacity: 1;
+}
+
+h1{
+    color: #658ec6;
+    font-weight: 900;
+    opacity:0.8
+}
+h3,h2{
+    color: #658ec6;
+    font-weight: 500;
+    opacity:0.8
+}
+.games{
+    padding: 5px;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    width: 100%;
+    text-align: center;
+    /* background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3)); */
+    border-radius: 10px;
+}
+.status input{
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    box-shadow: 6px 6px 20px rgb(122, 122, 122,0.3);
+    background: linear-gradient(to right top,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.5)); 
+}
+
+.card{
+    display: flex;
+    background: linear-gradient(to left bottom,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2));
+    border-radius: 10px;
+    color:white;
+    padding: 10px;
+    width: 100%;
+    height: 24%;
+    justify-content:space-between;
+    align-items: center;
+    margin:3rem;
+    box-shadow: 6px 6px 20px rgb(122, 122, 122);
+}
+.progress{
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.percentage{
+    font-weight: bold;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container img{
+    animation: container 4s linear infinite;
+}
+@keyframes container{
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}

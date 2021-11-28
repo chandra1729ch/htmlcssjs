@@ -1,0 +1,50 @@
+html,body{
+    display: flexbox;
+    width: 50%;
+    margin:auto;
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    color: crimson;
+}
+.container{
+    align-items: center;
+    width: 360px;
+    justify-content: center;
+}
+#inputField{
+    width: 300px;
+    height: 46px;
+    border: 1px solid black;
+    outline: none;
+    color: lightslategrey;
+    font-size: 25px;
+    vertical-align: middle;
+}
+#addToDo{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 30px;
+    color:lightslategrey;
+    vertical-align: middle;
+}
+.to-dos{
+    margin-top: 20px;
+    background: rosybrown;
+}
+
+.paragraph-styling{
+    margin:0;
+    cursor: pointer;
+    color: black;
+    font-size: 30px;
+    margin-top: 5px;
+    padding: 3px;
+    background: #ddd;
+}
+.paragraph-styling:nth-child(odd){
+    background: #eee;
+}
